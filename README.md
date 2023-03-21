@@ -13,7 +13,7 @@ pip install discord-webhook
 - Extrct in root folder of [AUTOMATIC1111 stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 - Replace `webui-user.bat` (or add `start /B python Discord_txt2img_uploader.py` and `start /B python Discord_img2img_uploader.py` before `call webui.bat`)
 - Add Discord webhook API url in `WEBHOOK_URL variable under` `Configuration variables`
-- Time between scans and output folder can be changed under `Configuration variables`
+- Time between scans and image directory can be changed under `Configuration variables`
 
 ## Donate
 Donate to support my current and future projects!
