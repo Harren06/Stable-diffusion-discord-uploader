@@ -12,7 +12,7 @@ pip install discord-webhook
 - Download [Latest release](https://github.com/Harren06/Stable-diffusion-discord-upploader/releases/latest)
 - Extrct in root folder of [AUTOMATIC1111 stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
 - Replace `webui-user.bat` (or add `start /B python Discord_txt2img_uploader.py` and `start /B python Discord_img2img_uploader.py` before `call webui.bat`)
-- Raste your Discord wenhook url in `WEBHOOK_URL` in both `Discord_txt2img_uploader.py` and `Discord_txt2img_uploader.py` if you want the images to be uploaded in different discord channels you can use different urls
+- Raste your Discord wenhook url in `WEBHOOK_URL` in both `Discord_txt2img_uploader.py` and `Discord_txt2img_uploader.py` if you want the images to be uploaded in different Discord channels you can use different urls
 
 - Add Discord webhook API url in `WEBHOOK_URL variable under` `Configuration variables`
 - Time between scans and image directory can be changed under `Configuration variables`
