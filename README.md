@@ -1,6 +1,6 @@
 # Stable diffusion discord upploader
 
-Stable Diffusion Discord Uploader is a Python script that automatically extracts metadata and uploads newly generated images as embeds to Discord using Discord's Webhook API. This script is meant to be used with the Windows version of [AUTOMATIC1111 stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui). The Discord embeds include the generated image, positive and negative prompts extracted from metadata, as well as steps, sampler, CFG scale, seed, resolution, model hash, and model name. By default, the script is configured to upload "txt2img" and "img2img" but can easily be configured, under `configuration variables`, to upload other types of generations.
+Stable Diffusion Discord Uploader is a Python script that automatically extracts metadata and uploads newly generated images as embeds to Discord using Discord's Webhook API. This script is meant to be used with the Windows version of [AUTOMATIC1111 stable-diffusion-webui](https://github.com/AUTOMATIC1111/stable-diffusion-webui). The Discord embeds include the generated image, positive and negative prompts extracted from metadata, as well as steps, sampler, CFG scale, seed, resolution, model hash, and model name. By default, the script is configured to upload `txt2img` and `img2img` but can easily be configured, under `configuration variables`, to upload other types of generations.
 
 
 
