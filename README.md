@@ -6,7 +6,7 @@ Stable Diffusion Discord Uploader is a Python script that automatically extracts
 
 ![image](https://github.com/Harren06/Stable-diffusion-discord-upploader/blob/main/image.png)
 
-## Instalation
+## installation
 - Install the dependencies
 ```
 pip install discord-webhook
