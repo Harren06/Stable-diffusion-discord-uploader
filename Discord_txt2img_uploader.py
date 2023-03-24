@@ -5,15 +5,15 @@ from PIL import Image
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
 # Configuration variables
-SCAN_INTERVAL = 30  # Time between scnans for new image files
+SCAN_INTERVAL = 30  # Time between scans for new image files
 PHOTOS_ROOT_DIR = "outputs/txt2img-images"
 LAST_UPLOAD_FILE = "last_txt2img_upload.txt"
-WEBHOOK_URL = "PASTE TOKEN HERE"
+WEBHOOK_URL = "PASTE WEBHOOK URL HERE"
 
 # Create Discord webhook object
 webhook = DiscordWebhook(url=WEBHOOK_URL)
 
-# Load the time of the last upload from a file
+# Load the time of the last upload from LAST_UPLOAD_FILE
 try:
     with open(LAST_UPLOAD_FILE) as f:
         last_upload_str = f.read().strip()
