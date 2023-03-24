@@ -5,10 +5,10 @@ from PIL import Image
 from discord_webhook import DiscordWebhook, DiscordEmbed
 
 # Configuration variables
-SCAN_INTERVAL = 30  # Time between scnans for new image files
+SCAN_INTERVAL = 30  # Time between scans for new image files
 PHOTOS_ROOT_DIR = "outputs/img2img-images"
 LAST_UPLOAD_FILE = "last_img2img_upload.txt"
-WEBHOOK_URL = "PASTE TOKEN HERE"
+WEBHOOK_URL = "PASTE WEHOOK URL HERE"
 
 # Create Discord webhook object
 webhook = DiscordWebhook(url=WEBHOOK_URL)
@@ -32,7 +32,7 @@ while True:
                     # Metadata extraction
                     with Image.open(photo_path) as image:
                         img_data = image.info.get("parameters", "")
-                        model_name = img_data.rsplit("Model: ", 1)[-1].strip()
+                        model_name = img_data.rsplit("Model: ", 1)[-1].strip().rsplit(", Denoising strength")[0].strip()
                         img_data = img_data.replace("Negative prompt:", "\nNegative prompt:").replace("Steps:", "\nSteps:")
 
                         # Add the image file as an attachment to the Discord message
